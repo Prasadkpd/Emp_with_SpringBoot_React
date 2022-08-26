@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Emp_with_SpringBoot_React.iml" filepath="$PROJECT_DIR$/.idea/Emp_with_SpringBoot_React.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_boot_react_emp/spring_boot_react_emp.iml" filepath="$PROJECT_DIR$/spring_boot_react_emp/spring_boot_react_emp.iml" />
+    </modules>
+  </component>
+</project>
