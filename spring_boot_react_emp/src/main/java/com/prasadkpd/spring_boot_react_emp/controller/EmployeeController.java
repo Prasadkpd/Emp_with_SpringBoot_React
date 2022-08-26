@@ -8,17 +8,28 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000/api/v1")
 @RestController
-@RequestMapping("/api/v1/")
+@RequestMapping("/api/v1")
 public class EmployeeController {
 
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    @GetMapping("/check")
+    public String check(){
+        return "Server is Running";
+    }
+
     @GetMapping("/employees")
+    public List<Employee> getAllEmployees(){
+    return employeeRepository.findAll();
+    }
+
+    @PostMapping("/employees")
     public Employee createEmployee(@RequestBody Employee employee){
         return employeeRepository.save(employee);
     }
